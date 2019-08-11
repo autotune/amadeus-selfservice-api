@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "type": "flight-destination",
+      "origin": "DEL",
+      "destination": "AMD",
+      "departureDate": "2019-09-19",
+      "returnDate": "2019-09-20",
+      "price": { "total": "3569" },
+      "links": {
+        "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=DEL&destination=AMD&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DURATION",
+        "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=DEL&destination=AMD&departureDate=2019-09-19&returnDate=2019-09-20&adults=1&nonStop=false"
+      }
+    },
+    {
+      "type": "flight-destination",
+      "origin": "DEL",
+      "destination": "BBI",
+      "departureDate": "2019-09-11",
+      "returnDate": "2019-09-14",
+      "price": { "total": "4772" },
+      "links": {
+        "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=DEL&destination=BBI&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DURATION",
+        "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=DEL&destination=BBI&departureDate=2019-09-11&returnDate=2019-09-14&adults=1&nonStop=false"
+      }
+    },
+    {
+      "type": "flight-destination",
+      "origin": "DEL",
+      "destination": "BLR",
+      "departureDate": "2019-08-23",
+      "returnDate": "2019-08-27",
+      "price": { "total": "5902" },
+      "links": {
+        "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=DEL&destination=BLR&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DURATION",
+        "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=DEL&destination=BLR&departureDate=2019-08-23&returnDate=2019-08-27&adults=1&nonStop=false"
+      }
+    },
+    {
+      "type": "flight-destination",
+      "origin": "DEL",
+      "destination": "COK",
+      "departureDate": "2019-12-31",
+      "returnDate": "2020-01-05",
+      "price": { "total": "6962" },
+      "links": {
+        "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=DEL&destination=COK&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DURATION",
+        "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=DEL&destination=COK&departureDate=2019-12-31&returnDate=2020-01-05&adults=1&nonStop=false"
+      }
+    },
+    {
+      "type": "flight-destination",
+      "origin": "DEL",
+      "destination": "CCJ",
+      "departureDate": "2019-09-15",
+      "returnDate": "2019-09-17",
+      "price": { "total": "10621" },
+      "links": {
+        "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=DEL&destination=CCJ&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DURATION",
+        "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=DEL&destination=CCJ&departureDate=2019-09-15&returnDate=2019-09-17&adults=1&nonStop=false"
+      }
+    },
+    {
+      "type": "flight-destination",
+      "origin": "DEL",
+      "destination": "HKT",
+      "departureDate": "2019-10-19",
+      "returnDate": "2019-10-22",
+      "price": { "total": "18018" },
+      "links": {
+        "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=DEL&destination=HKT&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DURATION",
+        "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=DEL&destination=HKT&departureDate=2019-10-19&returnDate=2019-10-22&adults=1&nonStop=false"
+      }
+    }
+  ],
+  "dictionaries": {
+    "currencies": { "INR": "INDIAN RUPEE" },
+    "locations": {
+      "HKT": { "subType": "AIRPORT", "detailedName": "PHUKET INTL" },
+      "AMD": { "subType": "AIRPORT", "detailedName": "S.VALLABHBHAI PATEL" },
+      "BBI": { "subType": "AIRPORT", "detailedName": "BIJU PATNAIK" },
+      "BLR": { "subType": "AIRPORT", "detailedName": "KEMPEGOWDA INTL" },
+      "DEL": { "subType": "AIRPORT", "detailedName": "INDIRA GANDHI INTL" },
+      "CCJ": { "subType": "AIRPORT", "detailedName": "INTERNATIONAL" },
+      "COK": { "subType": "AIRPORT", "detailedName": "KOCHI INTERNATIONAL" }
+    }
+  },
+  "meta": {
+    "currency": "INR",
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=DEL&departureDate=2019-08-01,2020-01-27&oneWay=false&duration=1,15&nonStop=false&viewBy=DESTINATION"
+    },
+    "defaults": {
+      "departureDate": "2019-08-01,2020-01-27",
+      "oneWay": false,
+      "duration": "1,15",
+      "nonStop": false,
+      "viewBy": "DESTINATION"
+    }
+  }
+}
