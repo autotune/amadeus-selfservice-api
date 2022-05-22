@@ -28,16 +28,16 @@ var Token *AccessToken
 func GetToken() {
 
 	var (
-		apiKey    string = os.Getenv("API_KEY")
-		apiSecret string = os.Getenv("API_SECRET")
-		baseUrl   string = os.Getenv("BASE_URL")
+		apiKey    string = os.Getenv("AMADEUS_CLIENT_ID")
+		apiSecret string = os.Getenv("AMADEUS_CLIENT_SECRET")
+		baseUrl   string = os.Getenv("AMADEUS_CLIENT_BASE_URL")
 	)
 
 	u := url.URL{}
 	u.Host = baseUrl
 	u.Path = "/v1/security/oauth2/token"
 	u.Scheme = "https"
-	uri := u.String()
+	uri := baseUrl//u.String()
 
 	v := url.Values{}
 	v.Add("grant_type", "client_credentials")
@@ -47,7 +47,7 @@ func GetToken() {
 	client := http.Client{}
 	req, err := http.NewRequest("POST", uri, strings.NewReader(v.Encode()))
 	if err != nil {
-		log.Fatalf("Error in getting access token req: %s", err)
+		log.Fatalf("Error in getting access token req: %s", uri)
 	}
 
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
@@ -70,7 +70,7 @@ func GetToken() {
 	}
 
 	//token := &token.AccessToken{}
-	//log.Println(string(body))
+	log.Println(string(body))
 	err = json.Unmarshal(body, &Token)
 	if err != nil {
 		log.Printf("Error in accessing Access Token body in response: %s", err)
